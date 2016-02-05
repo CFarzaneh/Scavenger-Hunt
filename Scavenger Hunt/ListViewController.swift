@@ -9,31 +9,66 @@
 import Foundation
 import UIKit
 
-class ListViewController: UITableViewController {
+class ListViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    var itemList = [ScavengerHuntItem(name: "Cat"), ScavengerHuntItem(name: "Bird"), ScavengerHuntItem(name: "Bricks")]
+    let myManager = ItemsManager()
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let imagePicker = UIImagePickerController()
+        if UIImagePickerController.isSourceTypeAvailable(.Camera) {
+            imagePicker.sourceType = .Camera
+        }
+        else {
+            imagePicker.sourceType = .PhotoLibrary
+        }
+        imagePicker.delegate = self
+        presentViewController(imagePicker, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        if let indexPath = tableView.indexPathForSelectedRow {
+            let selectedItem = myManager.itemsList[indexPath.row]
+            selectedItem.photo = info [UIImagePickerControllerOriginalImage] as? UIImage
+            myManager.save()
+            dismissViewControllerAnimated(true, completion: {self.tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+            })
+        }
+    }
     
     @IBAction func unwindToList(segue: UIStoryboardSegue) {
         if segue.identifier == "DoneItem" {
             let addVC = segue.sourceViewController as! AddViewController
             if let newItem = addVC.newItem {
-                itemList += [newItem]
-                let indexPath = NSIndexPath(forRow: itemList.count - 1, inSection: 0)
+                myManager.itemsList += [newItem]
+                myManager.save()
+                let indexPath = NSIndexPath(forRow: myManager.itemsList.count - 1, inSection: 0)
                 tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
             }
         }
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return itemList.count
+        return myManager.itemsList.count
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ListViewCell", forIndexPath: indexPath)
 
-        let item = itemList[indexPath.row]
+        let item = myManager.itemsList[indexPath.row]
         cell.textLabel?.text = item.name
+        
+        if item.completed {
+            cell.accessoryType = .Checkmark
+            cell.imageView?.image = item.photo
+        } else {
+            cell.accessoryType = .None
+            cell.imageView?.image = nil
+        }
         
         return cell
     }
