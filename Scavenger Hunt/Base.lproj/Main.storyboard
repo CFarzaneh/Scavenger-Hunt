@@ -50,10 +50,10 @@
             </objects>
             <point key="canvasLocation" x="18" y="298"/>
         </scene>
-        <!--Add-->
+        <!--AddViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="AddViewController" customModule="Scavenger_Hunt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="AddViewController" id="BYZ-38-t0r" customClass="AddViewController" customModule="Scavenger_Hunt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -81,17 +81,25 @@
                                 <action selector="cancelButton:" destination="BYZ-38-t0r" id="nve-sK-Zzm"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="done" id="Ncy-ll-pNl"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="done" id="Ncy-ll-pNl">
+                            <connections>
+                                <segue destination="aOw-Bm-X7e" kind="unwind" identifier="DoneItem" unwindAction="unwindToList:" id="nKA-jj-pae"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="textField" destination="3Gw-Qp-9XO" id="tpc-PI-eLC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="aOw-Bm-X7e" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1738" y="298"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--ListNavController-->
         <scene sceneID="5gS-E5-y8D">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ock-15-Rvf" sceneMemberID="viewController">
+                <navigationController title="ListNavController" automaticallyAdjustsScrollViewInsets="NO" id="ock-15-Rvf" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="m3Z-H7-3QY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -106,10 +114,10 @@
             </objects>
             <point key="canvasLocation" x="-794" y="298"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--AddNavController-->
         <scene sceneID="cYQ-hT-igo">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hm1-7S-h1O" sceneMemberID="viewController">
+                <navigationController title="AddNavController" automaticallyAdjustsScrollViewInsets="NO" id="Hm1-7S-h1O" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="coU-mb-kWS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

@@ -15,6 +15,7 @@
 		DF322B491C641A07000D01AE /* Scavenger_HuntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF322B481C641A07000D01AE /* Scavenger_HuntTests.swift */; };
 		DF322B541C641A07000D01AE /* Scavenger_HuntUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF322B531C641A07000D01AE /* Scavenger_HuntUITests.swift */; };
 		DF322B621C6430AE000D01AE /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF322B611C6430AE000D01AE /* ListViewController.swift */; };
+		DF322B641C644B03000D01AE /* ScavengerHuntItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF322B631C644B03000D01AE /* ScavengerHuntItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		DF322B531C641A07000D01AE /* Scavenger_HuntUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scavenger_HuntUITests.swift; sourceTree = "<group>"; };
 		DF322B551C641A07000D01AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF322B611C6430AE000D01AE /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		DF322B631C644B03000D01AE /* ScavengerHuntItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScavengerHuntItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				DF322B331C641A07000D01AE /* AppDelegate.swift */,
 				DF322B351C641A07000D01AE /* AddViewController.swift */,
+				DF322B631C644B03000D01AE /* ScavengerHuntItem.swift */,
 				DF322B611C6430AE000D01AE /* ListViewController.swift */,
 				DF322B371C641A07000D01AE /* Main.storyboard */,
 				DF322B3A1C641A07000D01AE /* Assets.xcassets */,
@@ -264,6 +267,7 @@
 			files = (
 				DF322B361C641A07000D01AE /* AddViewController.swift in Sources */,
 				DF322B341C641A07000D01AE /* AppDelegate.swift in Sources */,
+				DF322B641C644B03000D01AE /* ScavengerHuntItem.swift in Sources */,
 				DF322B621C6430AE000D01AE /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
