@@ -14,6 +14,7 @@
 		DF322B3E1C641A07000D01AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF322B3C1C641A07000D01AE /* LaunchScreen.storyboard */; };
 		DF322B491C641A07000D01AE /* Scavenger_HuntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF322B481C641A07000D01AE /* Scavenger_HuntTests.swift */; };
 		DF322B541C641A07000D01AE /* Scavenger_HuntUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF322B531C641A07000D01AE /* Scavenger_HuntUITests.swift */; };
+		DF322B621C6430AE000D01AE /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF322B611C6430AE000D01AE /* ListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		DF322B4F1C641A07000D01AE /* Scavenger HuntUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Scavenger HuntUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF322B531C641A07000D01AE /* Scavenger_HuntUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scavenger_HuntUITests.swift; sourceTree = "<group>"; };
 		DF322B551C641A07000D01AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF322B611C6430AE000D01AE /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				DF322B331C641A07000D01AE /* AppDelegate.swift */,
 				DF322B351C641A07000D01AE /* ViewController.swift */,
+				DF322B611C6430AE000D01AE /* ListViewController.swift */,
 				DF322B371C641A07000D01AE /* Main.storyboard */,
 				DF322B3A1C641A07000D01AE /* Assets.xcassets */,
 				DF322B3C1C641A07000D01AE /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 			files = (
 				DF322B361C641A07000D01AE /* ViewController.swift in Sources */,
 				DF322B341C641A07000D01AE /* AppDelegate.swift in Sources */,
+				DF322B621C6430AE000D01AE /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
