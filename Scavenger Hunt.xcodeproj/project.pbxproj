@@ -16,6 +16,7 @@
 		DF322B541C641A07000D01AE /* Scavenger_HuntUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF322B531C641A07000D01AE /* Scavenger_HuntUITests.swift */; };
 		DF322B621C6430AE000D01AE /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF322B611C6430AE000D01AE /* ListViewController.swift */; };
 		DF322B641C644B03000D01AE /* ScavengerHuntItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF322B631C644B03000D01AE /* ScavengerHuntItem.swift */; };
+		DF322B661C6461CA000D01AE /* ItemsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF322B651C6461CA000D01AE /* ItemsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		DF322B551C641A07000D01AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF322B611C6430AE000D01AE /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		DF322B631C644B03000D01AE /* ScavengerHuntItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScavengerHuntItem.swift; sourceTree = "<group>"; };
+		DF322B651C6461CA000D01AE /* ItemsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				DF322B331C641A07000D01AE /* AppDelegate.swift */,
 				DF322B351C641A07000D01AE /* AddViewController.swift */,
 				DF322B631C644B03000D01AE /* ScavengerHuntItem.swift */,
+				DF322B651C6461CA000D01AE /* ItemsManager.swift */,
 				DF322B611C6430AE000D01AE /* ListViewController.swift */,
 				DF322B371C641A07000D01AE /* Main.storyboard */,
 				DF322B3A1C641A07000D01AE /* Assets.xcassets */,
@@ -269,6 +272,7 @@
 				DF322B341C641A07000D01AE /* AppDelegate.swift in Sources */,
 				DF322B641C644B03000D01AE /* ScavengerHuntItem.swift in Sources */,
 				DF322B621C6430AE000D01AE /* ListViewController.swift in Sources */,
+				DF322B661C6461CA000D01AE /* ItemsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,6 +501,7 @@
 				DF322B5A1C641A07000D01AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF322B5B1C641A07000D01AE /* Build configuration list for PBXNativeTarget "Scavenger HuntTests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +510,7 @@
 				DF322B5D1C641A07000D01AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF322B5E1C641A07000D01AE /* Build configuration list for PBXNativeTarget "Scavenger HuntUITests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +519,7 @@
 				DF322B601C641A07000D01AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
